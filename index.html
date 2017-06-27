@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Angular-Communication with Directive</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+</head>
+
+<body data-ng-app="myApp">
+    <h1>Angular-Communication with Directive</h1>
+    <div ng-controller="CheckBoxCount">
+        <h1>{{name}}</h1>
+        <label> First: <input type="checkbox" check-count /> </label><br>
+        <label> Second: <input type="checkbox" check-count /> </label><br>
+        <label> Third : <input type="checkbox" check-count /> </label><br>
+        <h1>Count: {{msg}}</h1>
+        <div ng-include="'ApplyButton.html'"></div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="app.js"></script>
+
+</html>
