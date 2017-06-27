@@ -11,9 +11,11 @@
     <h1>Angular-Communication with Directive</h1>
     <div ng-controller="CheckBoxCount">
         <h1>{{name}}</h1>
-        <label> First: <input type="checkbox" check-count /> </label><br>
-        <label> Second: <input type="checkbox" check-count /> </label><br>
-        <label> Third : <input type="checkbox" check-count /> </label><br>
+        <div check-count>
+        <label> First: <input type="checkbox"  /> </label><br>
+        <label> Second: <input type="checkbox"  /> </label><br>
+        <label> Third : <input type="checkbox" /> </label><br>
+        </div>
         <h1>Count: {{msg}}</h1>
         <div ng-include="'ApplyButton.html'"></div>
     </div>
